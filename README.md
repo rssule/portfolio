@@ -20,3 +20,5 @@ Here's some of the cool work I have done:
 ## Critiques
 
 ## Sketches
+
+## Projects
