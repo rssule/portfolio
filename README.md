@@ -15,7 +15,7 @@ My name is Rahila (pronounced ra-he-la). I am a graduate student at CMU's Heinz 
 Here's some of the cool work I have done:
 
 ## Data Visualizations
-King County COVID Cases(/King County Cases.md)
+King County COVID Cases(/king_county_cases.md)
 
 ## Critiques
 
