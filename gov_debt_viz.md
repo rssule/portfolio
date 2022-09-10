@@ -1,4 +1,4 @@
-[Back to portfolio](/)
+[Back to portfolio](/portfolio)
 ## General government debt (Sep. 10, 2022)
 #### Total, % of GDP, 2020
 
