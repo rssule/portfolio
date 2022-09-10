@@ -17,6 +17,8 @@ Here's some of the cool work I have done:
 ## Data Visualizations
 [King County COVID Cases](/king_county_cases.md)
 
+[General Government Debt - 2020](/gov_debt_viz.md)
+
 ## Critiques
 
 ## Sketches
