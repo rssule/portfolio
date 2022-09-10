@@ -1,0 +1,5 @@
+[Back to portfolio](/)
+## General government debt (Sep. 10, 2022)
+#### Total, % of GDP, 2020
+
+<iframe src="https://data.oecd.org/chart/6OcV" width="860" height="645" style="border: 0" mozallowfullscreen="true" webkitallowfullscreen="true" allowfullscreen="true"><a href="https://data.oecd.org/chart/6OcV" target="_blank">OECD Chart: General government debt, Total, % of GDP, Annual, 2020</a></iframe>
