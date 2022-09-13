@@ -10,3 +10,8 @@
 
 # Viz 2
 <div class="flourish-embed flourish-chart" data-src="visualisation/11147962"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+
+
+# Viz 3
+<div class="flourish-embed flourish-scatter" data-src="visualisation/11164525"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
