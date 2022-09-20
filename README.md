@@ -4,7 +4,11 @@ This is my public portfolio for Telling Stories with Data at CMU
 # About me
 Hello there! :)
 
-![My Image](headshot_rsule.jpg)
+<img
+  src="headshot_rsule.jpg"
+  alt="RS headshot"
+  title="My headshot"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 My name is Rahila (pronounced ra-he-la). I am a graduate student at CMU's Heinz College. My major is Public Policy & Management - Data Analytics. I am interested in learning about using data and technology to improve food systems.
 
