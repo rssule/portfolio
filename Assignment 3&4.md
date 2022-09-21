@@ -95,8 +95,13 @@ tr:nth-child(even) {
   ### Prompt 3: Final Thoughts
   
   ## Sketch
+  ![TSWD A3 4 Sketch](https://user-images.githubusercontent.com/103347863/191388845-672543e4-3c33-4f2b-9e57-1ef24b1fa5df.png)
   
   ## Sketch Feedback
+  
+  ## Final Visualization
+  Based on insights from the critique and feedback from the sketches, here is my final visualization:
+  <div class="flourish-embed flourish-chart" data-src="visualisation/11239580"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
   
   ## Reflection
   
