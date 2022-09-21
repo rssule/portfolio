@@ -4,7 +4,7 @@ This is my public portfolio for Telling Stories with Data at CMU
 # About me
 Hello there! :)
 
-![headshot_rsule](https://user-images.githubusercontent.com/103347863/191387402-3530c1eb-ec6b-4354-9b6e-cbc0829e84d4.jpeg)
+![small_headshot_rsule](https://user-images.githubusercontent.com/103347863/191388485-73674aaf-3a46-4e1c-8af1-e9efdef08ee2.jpeg)
 
 
 My name is Rahila (pronounced ra-he-la). I am a graduate student at CMU's Heinz College. My major is Public Policy & Management - Data Analytics. I am interested in learning about using data and technology to improve food systems.
@@ -20,7 +20,9 @@ Here's some of the cool work I have done:
 ## Data Visualizations
 [King County COVID Cases](/king_county_cases.md)
 
-[General Government Debt - 2020](/gov_debt_viz.md)
+[Assignmnet 2](/Assignment 2.md)
+
+[Assignment 3 & 4](/Assignment 3&4.md)
 
 ## Critiques
 
