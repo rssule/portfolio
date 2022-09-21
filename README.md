@@ -20,7 +20,7 @@ Here's some of the cool work I have done:
 ## Data Visualizations
 [King County COVID Cases](/king_county_cases.md)
 
-[Assignmnet 2](/Assignment 2.md)
+[Assignment 2](/Assignment 2.md)
 
 [Assignment 3 & 4](/Assignment 3&4.md)
 
