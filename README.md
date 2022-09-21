@@ -4,7 +4,10 @@ This is my public portfolio for Telling Stories with Data at CMU
 # About me
 Hello there! :)
 
-<img align="left" width="200" height="200" src = "https://user-images.githubusercontent.com/103347863/191388485-73674aaf-3a46-4e1c-8af1-e9efdef08ee2.jpeg">
+<img width="200" height="200" src = "https://user-images.githubusercontent.com/103347863/191388485-73674aaf-3a46-4e1c-8af1-e9efdef08ee2.jpeg">
+
+
+
 
 <p>My name is Rahila (pronounced ra-he-la). I am a graduate student at CMU's Heinz College. My major is Public Policy & Management - Data Analytics. I am interested in learning about using data and technology to improve food systems.</p>
 
