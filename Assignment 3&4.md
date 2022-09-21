@@ -121,13 +121,14 @@ tr:nth-child(even) {
   ## Sketch Feedback
   After developing the wireframe, feedback was sought from two individuals:
 
-•	Adult, late 50’s, healthcare worker
-o	The sketch shows a graph that shows Luna county has the highest food insecurity rate in the state at 38%.
-o	It was unclear why some counties had numbers shown but others did not so it was suggested that all bars be labelled with rates for the respective county. It was indicated that showing all the numbers would give a clear picture and would not be distracting. Seeing all the county names on the y-axis was also not deemed as overwhelming. Also, it was noted that the heading provides the information to know what the graph is showing and highlights a high rate upfront (Luna county).
-o	It was assumed that the intended audience would be the general public.
-•	Adult, late 20’s, student
-o	The sketch shows food insecurity rate by county in New Mexico, ranking from highest to lowest. This shows that Luna county has the highest food insecurity rate in the state.
-o	It was unclear how the rate is derived and its basis so it was suggested to include the formula for calculating the rate and the year of the data shown.
+- Adult, late 50’s, healthcare worker
+  - The sketch shows a graph that shows Luna county has the highest food insecurity rate in the state at 38%.
+  - It was unclear why some counties had numbers shown but others did not so it was suggested that all bars be labelled with rates for the respective county. It was indicated that showing all the numbers would give a clear picture and would not be distracting. Seeing all the county names on the y-axis was also not deemed as overwhelming. Also, it was noted that the heading provides the information to know what the graph is showing and highlights a high rate upfront (Luna county).
+  - It was assumed that the intended audience would be the general public.
+  
+- Adult, late 20’s, student
+  - The sketch shows food insecurity rate by county in New Mexico, ranking from highest to lowest. This shows that Luna county has the highest food insecurity rate in the state.
+  - It was unclear how the rate is derived and its basis so it was suggested to include the formula for calculating the rate and the year of the data shown.
 
   <i>Similarities</i>
 It is clear that the graph shows child food insecurity rates for New Mexico counties and Luna county’s 38% stands out as the highest. This indicates that the callout being implement in the sketch has achieved its purpose!
