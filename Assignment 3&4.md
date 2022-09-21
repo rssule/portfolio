@@ -1,17 +1,17 @@
 [Back to portfolio](/portfolio)
 
-### Assignment 3 & 4
+# Assignment 3 & 4
 
 ## Overview
-# Ending Childhood Food Insecurity in New Mexico
+### Ending Childhood Food Insecurity in New Mexico
 <p>The report highlights the unfortunate issue of food insecurity in New Mexico that has been worsened by COVID-19; limiting access to healthy and nutritious food for many children within the state. The report also discusses current evidence-based programs aimed at addressing food insecurity and its root causes. It is however pointed out that there are oftentimes barriers to accessing the programs or limited resource allocation from the programs. The report proposes several policy recommendations in line with a holistic approach to addressing both financial and food insecurity in a bid to ensure reliable access to healthy food for New Mexico families during and after the pandemic. In describing the food insecurity issue, the report uses a basic choropleth to show the varying food insecurity rates in 2020 across New Mexico counties and highlights the percentage point increase from 2019.</p>
 
-# Original Visualization
+## Original Visualization
 <img width="784" alt="oldviz" src="https://user-images.githubusercontent.com/103347863/191386239-60cc074a-35fb-4b67-a26b-4c1ca79f87c9.png">
 
 <a href="https://www.nmvoices.org/archives/15258#_edn4">Here is a link to the report</a> <href>  
 
-# Data
+## Data
   <p>The data used in creating the choropleth was not explicitly included in the report as a table or addendum but from the figure, it was quite easy to extract the data to recreate a dataset. The data is presented in the table below:</p>
 
 <style>
@@ -73,6 +73,35 @@ tr:nth-child(even) {
 </tbody>
 </table>
   
-# Critique
+## Critique
+  ### Usefulness
+  
+  ### Completeness
+  
+  ### Perceptibility
+  
+  ### Truthfulness
+  
+  ### Intuitiveness
+  
+  ### Aesthetics
+  
+  ### Engagement
+  
+  ### Prompt 1: Overall Observations
+  
+  ### Prompt 2: Audience
+  
+  ### Prompt 3: Final Thoughts
+  
+  ## Sketch
+  
+  ## Sketch Feedback
+  
+  ## Reflection
+  
+  ## References
+  
+  Lin, D. (2021, September 20). Ending Childhood Food Insecurity in New Mexico. New Mexico Voices for Children. https://www.nmvoices.org/archives/15258#_edn4
   
   
