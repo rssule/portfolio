@@ -16,7 +16,6 @@
 
 <style>
 table {
-  font-family: times new roman, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
@@ -130,13 +129,13 @@ tr:nth-child(even) {
   - The sketch shows food insecurity rate by county in New Mexico, ranking from highest to lowest. This shows that Luna county has the highest food insecurity rate in the state.
   - It was unclear how the rate is derived and its basis so it was suggested to include the formula for calculating the rate and the year of the data shown.
 
-  <i>Similarities</i>
+<i>Similarities</i>
 <p>It is clear that the graph shows child food insecurity rates for New Mexico counties and Luna county’s 38% stands out as the highest. This indicates that the callout being implement in the sketch has achieved its purpose!</p>
 
-  <i>Differences</i>
+<i>Differences</i>
 <p>The first interviewee was more focused on the communicativeness of the visualization – in other words how complete the story was; on the other hand, but sort of similarly, the second interviewee was focused on the validity of the rates and their mathematical formulation – which also focuses on how complete the story is.</p>
 
-  <i>Learnings</i>
+<i>Learnings</i>
 <p>It was interesting to note that highlighting the highest rate through the use of color and changing the title worked in putting focus on the rate. Both interviewees did not seem distracted or overly confused by the sketch but both wanted some more information included in the graph. </p>
 <p>My response would be to include the year in the title and label all the counties & rates. I decided to not include extra information on how the rates were calculated because that is not information that needs to be on the graph for the intended primary audience and also, that information could be distracting if included as it is more suited in the body or appendix of the report.</p>
 
