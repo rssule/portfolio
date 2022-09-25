@@ -26,4 +26,5 @@ Here's some of the cool work I have done:
 
 [Assignment 3 & 4](/Assignment 3&4.md)
 
-## Projects
+## Project
+[Part 1](/project_part1.md)
