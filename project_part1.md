@@ -13,8 +13,8 @@ For this project, I will focus on the situation in displacement sites across Bor
 
 
 ## Data
-1. <b>Site data:</b> The main dataset to be used for the project is the IOM DTM's Nigeria — Site Assessment Round 40 (north-east) dataset. This dataset contains data on the population living in displacement sites and their living conditions across the Northeast Nigeria states
-2. <b>Location data:</b> This is supplementary data from the IOM's DTM on Nigeria — Location Assessment Round 40 (north-east). This is similar to the Site dataset but includes more detailed insights into displacement locations across Northeast Nigeria.
+1. **Site data:** The main dataset to be used for the project is the IOM DTM's [Nigeria — Site Assessment Round 40 (north-east)](https://displacement.iom.int/datasets/nigeria-site-assessment-round-40-north-east-0) dataset. This dataset contains data on the population living in displacement sites and their living conditions across the Northeast Nigeria states
+2. **Location data:** This is supplementary data from the IOM's DTM on [Nigeria — Location Assessment Round 40 (north-east)](https://displacement.iom.int/datasets/nigeria-location-assessment-round-40-north-east-0). This is similar to the Site dataset but includes more detailed insights into displacement locations across Northeast Nigeria.
 
 ## Medium and Method
 ### Medium
