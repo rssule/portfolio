@@ -7,9 +7,24 @@ The purpose of this project is to highlight the very compounded situation in Nor
 For this project, I will focus on the situation in displacement sites across Borno – highlighting food as the most unmet need. My call to action would be to raise the need for more to be done – more volunteers, more innovations, more donations and more contextualized sustainable responses. The ending note would be “saving even just one family is a win!” In summary, I will highlight the displacement issue in Northeast Nigeria caused by conflicts, focus on the hotspot i.e. Borno, highlight the high displacement stats within the state, focus on hunger as a problem even within these displacement sites and end with some action items for the audience.
 
 ## Outline
+Below is an outline of the story:
 
+- Hook: Population of displaced people in Nigeria is currently 2.2m!
+- Definition of key terms: The key terms to be defined include Displacement, Food insecurity, Displacement site types, Non-Food Items (NFI)
+- Overview of situation in region: History of conflicts and their evolution since then. Current situation in the region.
+- Focus on Borno state: Situation and highlight the LGAs with the highest concentration of households
+- Why this is important: Families are facing vulnerability and are helpless. Many children are unable to have dreams since they are born into vulnerability and insecurity.
+- Call to action: highlight which LGAs face the highest deprivation across basic needs and have highest number of households within displacement sites. MORE needs to be done! Improved onsite and remote monitoring and consensual data collection of the situation to improve data availability and quality which in-turn improves the opportunity to gain more insights into the situation and facilitate more agile response.
 
 ## Sketches
+**Visualizations for story:**
+
+![part1-sketches](https://user-images.githubusercontent.com/103347863/192682964-60c60a3c-2c28-42d1-9224-14b0697135a5.png)
+
+![heat-map](https://user-images.githubusercontent.com/103347863/192681640-3cb13189-db5b-47b2-b97b-288bf8ceccc7.jpeg)
+
+**Story-arc**
+![story-arc-annotated](https://user-images.githubusercontent.com/103347863/192680368-69733cab-0671-49fa-a9cb-9527e18400b9.jpeg)
 
 
 ## Data
