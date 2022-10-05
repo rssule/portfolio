@@ -28,3 +28,7 @@ Here's some of the cool work I have done:
 
 ## Project
 [Part 1](/project_part1.md)
+
+[Part 2](/project_part2.md)
+
+Part 3
