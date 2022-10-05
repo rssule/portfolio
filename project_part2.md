@@ -16,3 +16,6 @@
 ### Interview Findings
 
 ### Improvements for Part 3
+
+
+[Go to Part 3](/project_part3.md)
