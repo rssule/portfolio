@@ -31,4 +31,4 @@ Here's some of the cool work I have done:
 
 [Part 2](/project_part2.md)
 
-Part 3
+[Part 3](/project_part3.md)
