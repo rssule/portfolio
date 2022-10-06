@@ -74,7 +74,7 @@ The main focus of my user research was aesthetics, intuitiveness, persuasiveness
 		<td><i>"Overall, I think it works pretty well aesthically. I would suggest checking the fonts for consistency"</i></td>
 	</tr>
 	<tr>
-		<td>,b>Intuitiveness</b></td>
+		<td><b>Intuitiveness</b></td>
 	</tr>
 	<tr>
 		<td>Is the order of the story clear to you? Or should the information be reordered?</td>
