@@ -5,7 +5,7 @@
 
 ## Storyboard
 The storyboard for this project was completed in Shorthand (embedded below):
-<iframe src = "https://preview.shorthand.com/2bjeQZUmEDkuRf9h" title="TSWD Storyboard in Shorthand"></iframe>
+<iframe src = "https://preview.shorthand.com/2bjeQZUmEDkuRf9h" title="TSWD Storyboard in Shorthand" width = "600" height = "1200"></iframe>
 
 ## User Research and Interviews
 
