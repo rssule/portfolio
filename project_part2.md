@@ -42,19 +42,16 @@ The main focus of my user research was aesthetics, intuitiveness, persuasiveness
 <table>
 	<tr>
 	    <td></td>
-		<td>Interview #1: Female, early 30's, Nigerian</td>
-		<td>Interview #2:Male, late 20's, Mexican</td>
-		<td>Interview #3: Female, late 20's, Nigerian</td>
+		<td><p>Interview #1</p> <p>Female, early 30's, Nigerian</p></td>
+		<td><p>Interview #2</p> <p>Male, late 20's, Mexican</p></td>
+		<td><p>Interview #3</p> <p>Female, late 20's, Nigerian</p></td>
 	</tr>
 	<tr>
 		<td>Aesthetics</td>
-		<td></td>
-		<td></td>
-		<td></td>
 	</tr>
 	<tr>
 		<td>Do the pictures complement the story?</td>
-		<td>*"Yes, I think the pictures complement the story."*</td>
+		<td><i>"Yes, I think the pictures complement the story."</i></td>
 		<td>*"Yes, the pictures definitely complement the story. I would suggest maybe adding one or two more pictures. Maybe one showing the IDP sites."*</td>
 		<td>*"Yes, the pictures complement the story nicely! You could consider adding another one"*</td>
 	</tr>
@@ -84,7 +81,7 @@ The main focus of my user research was aesthetics, intuitiveness, persuasiveness
 	</tr>
 	<tr>
 		<td>Is the order of the story clear to you? Or should the information be reordered?</td>
-		<td>"""The order of the story is clear and works well."*</td>
+		<td>"The order of the story is clear and works well."*</td>
 		<td>"""The order is good and I was able to walkthrough well. I would suggest adding a few more call-out headings to serve as nice segues"*</td>
 		<td>"""The order is pretty clear and nice. The flow is good."*</td>
 	</tr>
@@ -147,6 +144,9 @@ Based on feedback from the user interviews, here are changes to be implemented i
 - Check and enforce consistency of fonts
 - Edit and include subtitles and call-outs to be explainable and support the story
 - Include one or two more pictures that support the story
+- Include some information on the insurgency in Borno
+- Include definitions for onsite vs offsite, food insecure, unmet need/humnitarian need, IDP and any other helpful definition
+- Change the donate now page (already adjusted in part 2)
 
 ## References
 <p>IOM. (2022). Nigeria—Site Assessment Round 40 (north-east) | Displacement. https://displacement.iom.int/datasets/nigeria-site-assessment-round-40-north-east-0</p>
