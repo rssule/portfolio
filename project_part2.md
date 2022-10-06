@@ -4,7 +4,7 @@
 # Project - Part 2
 
 ## Storyboard
-The storyboard for this project was completed in Shorthand (embedded below):
+The storyboard for this project was completed in Shorthand (embedded below) and accessible [here](https://preview.shorthand.com/2bjeQZUmEDkuRf9h)
 <iframe src = "https://preview.shorthand.com/2bjeQZUmEDkuRf9h" title="TSWD Storyboard in Shorthand" width = "950" height = "1200"></iframe>
 
 ## User Research and Interviews
