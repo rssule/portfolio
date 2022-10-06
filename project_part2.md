@@ -42,9 +42,9 @@ The main focus of my user research was aesthetics, intuitiveness, persuasiveness
 ### Improvements for Part 3
 
 ## References
-IOM. (2022). Nigeria—Site Assessment Round 40 (north-east) | Displacement. https://displacement.iom.int/datasets/nigeria-site-assessment-round-40-north-east-0
-von Grebmer, K., Bernstein, J., Delgado, C., Smith, D., Wiemers, M., Schiffer, T., Hanano, A., Towey, O., Ní Chéilleachair, R., Foley, C., Gitter, S., Ekstrom, K., & Fritschel, H. (2021). 2021 Global Hunger Index: Hunger and Food Systems in Conflict Settings. https://www.globalhungerindex.org/pdf/en/2021.pdf
-World Food Programme. (2022). North Eastern Nigeria emergency. https://www.wfp.org/emergencies/nigeria-emergency
+<p>IOM. (2022). Nigeria—Site Assessment Round 40 (north-east) | Displacement. https://displacement.iom.int/datasets/nigeria-site-assessment-round-40-north-east-0</p>
+<p>von Grebmer, K., Bernstein, J., Delgado, C., Smith, D., Wiemers, M., Schiffer, T., Hanano, A., Towey, O., Ní Chéilleachair, R., Foley, C., Gitter, S., Ekstrom, K., & Fritschel, H. (2021). 2021 Global Hunger Index: Hunger and Food Systems in Conflict Settings. https://www.globalhungerindex.org/pdf/en/2021.pdf</p>
+<p>World Food Programme. (2022). North Eastern Nigeria emergency. https://www.wfp.org/emergencies/nigeria-emergency</p>
 
 
 [Go to Part 3](/project_part3.md)
