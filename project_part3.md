@@ -14,5 +14,7 @@
 ## Audience
 
 ## Changes from part 2
+After receiving feedback from the user research & teaching team, I made the following changes from part 2 to part 3:
+
 
 ## Post-presentation Insights and Reflections
