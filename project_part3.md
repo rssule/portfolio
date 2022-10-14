@@ -35,7 +35,7 @@ Food and Agriculture Organization of the United Nations (FAO). “Hunger and Foo
 
 IAHPC Pallipedia. “Basic Needs.” Pallipedia, 2022. https://pallipedia.org/basic-needs/.
 
-IOM. “Nigeria — Site Assessment Round 40 (North-East) | Displacement.,” June 2022. https://displacement.iom.int/datasets/nigeria-site-assessment-round-40-north-east-0.
+IOM. “Nigeria — Site Assessment Round 40 (North-East) Displacement.,” June 2022. https://displacement.iom.int/datasets/nigeria-site-assessment-round-40-north-east-0.
 
 OECD. “Fragility.” States of Fragility 2022, 2022. https://www.oecd.org/publications/states-of-fragility-fa5a6770-en.htm.
 
