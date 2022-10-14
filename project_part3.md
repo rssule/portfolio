@@ -32,17 +32,31 @@ The project process was quite enlightening. At ideation stage in part 1, it seem
 
 ## References
 Food and Agriculture Organization of the United Nations (FAO). “Hunger and Food Insecurity.” Food and Agriculture Organization of the United Nations, 2022. https://www.fao.org/hunger/en/.
+
 IAHPC Pallipedia. “Basic Needs.” Pallipedia, 2022. https://pallipedia.org/basic-needs/.
+
 IOM. “Nigeria — Site Assessment Round 40 (North-East) | Displacement.,” June 2022. https://displacement.iom.int/datasets/nigeria-site-assessment-round-40-north-east-0.
+
 OECD. “Fragility.” States of Fragility 2022, 2022. https://www.oecd.org/publications/states-of-fragility-fa5a6770-en.htm.
+
 The UN Refugee Agency. “IDP Definition.” UNHCR Emergency Handbook, 2022. https://emergency.unhcr.org/entry/250553/idp-definition.
+
 United Nations. “Nigeria: Crisis in Northeast Will Worsen without Urgent Help, Says OCHA.” UN News (blog), June 21, 2022. https://news.un.org/en/story/2022/06/1120912.
+
 United Nations. “Displaced in Northeast Nigeria ‘Knocking on Door of Starvation’: WFP.” UN News (blog), October 15, 2021. https://news.un.org/en/story/2021/10/1103252.
+
 Grebmer, Klaus von, Jill Bernstein, Caroline Delgado, Dan Smith, Miriam Wiemers, Tabea Schiffer, Asja Hanano, et al. “2021 Global Hunger Index: Hunger and Food Systems in Conflict Settings.” Bonn: Welthungerhilfe and Dublin: Concern Worldwide, 2021. https://www.globalhungerindex.org/pdf/en/2021.pdf.
+
 Walker, Andrew. “What Is Boko Haram?” Special Report. What Is Boko Haram? Washington, DC: United States Institue of Peace, June 2012. https://www.usip.org/sites/default/files/SR308.pdf.
+
 World Food Programme. “North Eastern Nigeria Emergency.” World Food Programme, 2022. https://www.wfp.org/emergencies/nigeria-emergency.
+
 World Food Programme. “WFP Annual Country Report – Nigeria,” 2021. https://docs.wfp.org/api/documents/WFP-0000137967/download/?_ga=2.17863610.2099427124.1665165550-2141174870.1664153180.
+
 Worldometer. “Nigeria Population.” Worldometer - Nigeria Population, 2022. https://www.worldometers.info/world-population/nigeria-population/.
+
 Gavin, Michelle. “Nigeria Security Tracker.” Council on Foreign Relations, March 15, 2022. https://www.cfr.org/nigeria/nigeria-security-tracker/p29483.
+
 Africanews. “Nigeria’s Chibok Girls: Three Women Found Years after Their Abduction.” Africanews (blog), July 30, 2022. https://www.africanews.com/2022/07/30/nigerias-chibok-girls-three-women-found-years-after-their-abduction//.
+
 My Life Elsewhere. “Nigeria Is about 11 Times Smaller than United States.,” 2022. https://www.mylifeelsewhere.com/country-size-comparison/nigeria/united-states.
