@@ -27,7 +27,7 @@ After receiving feedback from the user research & teaching team, I made the foll
 - Updated the donate now page to show two donation links, one for the World Food Programme and another for the United Nations Refugee Agency. The goal here was to provide two options for donors – one for food and one for displacement.
 
 
-## Post-presentation Insights and Reflections
+## Reflections
 The project process was quite enlightening. At ideation stage in part 1, it seemed like an important topic but complex topic to tackle for the project. Although it still remains important and complex, I think it was interesting doing the research and deciding what visualizations to create from the vast data that would support the narrative. I was more aware of my use of color, choice of visulaization and overall communication through the visualizations. With a goal of stimulating melancholic feelings in the reader – thus the use of a dark theme.  Utilizing Balsamiq, Flourish and Shorthand in this process was an insightful learning experience. For the presentation, it was quite difficult summarizing the story in under a minute but I do not think it is impossible.
 
 ## References
