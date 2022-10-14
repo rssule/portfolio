@@ -1,5 +1,9 @@
 [Back to portfolio](/portfolio)
 
+[Go to Part 2](/project_part2.md)
+
+[Go to Part 3](/project_part3.md)
+
 # Project - Part 1
 
 ## Overview
