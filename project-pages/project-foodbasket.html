@@ -205,33 +205,66 @@
 			<p><b>Unsupervised Learning Models</b></p>
 			<p style="text-align: justify;">The final k-means clustering model was run with k = 2 and a silhouette score of 0.4, meaning that the model identified two clusters in the data and indicates that the data points in the two clusters are moderately well-separated from each other. This suggests that the model was able to effectively identify two distinct groups of households, with relatively little overlap between the two clusters. However, the relatively low silhouette score also indicates that there may be some data points that were not clearly assigned to one cluster or the other, or that the two clusters are not as distinct as they could be. In general, our results indicate that the model performed reasonably well in identifying distinct clusters in the data, but that there may be some room for improvement.</p>
 			<p style="text-align: justify;">The table below shows the median food expenditure for each household group identified by the machine learning models and used as parameters for the optimization models:</p>
-			<table>
-			  <tr>
-			    <th>Supervised: Random Forest</th>
-			    <th>Unsupervised: K-Means</th>
-			  </tr>
-			  <tr>
-			    <td>Low: NGN 5,245</td>
-			    <td>Cluster 1: NGN 4,270</td>
-			  </tr>
-			  <tr>
-			    <td>Medium: NGN 2,755</td>
-			    <td>Cluster 2: NGN 6,860</td>
-			  </tr>
-			  <tr>
-			    <td>Low: NGN 1,880</td>
-			    <td></td>
-			  </tr>
-			</table>
+				<div class="gallery-image-container">
+              			<img src="../assets/images/mlresult.png" class="gallery-image">
+            			</div> 
 			
 			<h3>Optimization Results</h3>
-			<p style="text-align: justify;"></p>
+			<p style="text-align: justify;">Since the low-cost food basket model was focused on finding the most affordable combination of food items that meet the recommended nutrient reference values, the total food basket costs are generally low (about NGN 115) and comprise of few (4) food items for both machine learning subgroups. In contrast, the low-cost food basket optimized for cultural acceptability takes into account the food purchasing patterns of households in addition to the cost and nutrient constraints, thus the results include a wider range of food items in the optimal food basket and the cost constraints are binding with zero slack (i.e. equal to the median food expenditure for each group).</p>
+			<p style="text-align: justify;">The table below shows summarized optimization results[6] for both machine learning and optimization models: </p>
+				<div class="gallery-image-container">
+              			<img src="../assets/images/optimizationresult.png" class="gallery-image">
+            			</div> 
 			</div>
 			</div>
 
-        		<div class="subheader-text">Results</div>
+        		<div class="subheader-text">Policy Recommendations</div>
         		<div class="project-details-content">
          	 	<div class="body-text">
+			<p style="text-align: justify;">The stakeholders for our project are Nigerian households, the Nigerian Ministry of Health, the National Agency for Food and Drug Administration and Control (NAFDAC), the Federal Ministry of Humanitarian Affairs, and Disaster Management and Social Development. The latter three are our policymakers of interest that are best suited to coordinate and implement our policy recommendations. Thus, based on our optimization results, we recommend:</p>
+			<ul>
+				<li>Adopt optimized food basket model (low-cost & cultural acceptability) for hunger intervention programs or policies aimed at reducing the food insecurity burden for Nigerian households. This could include initiatives such as subsidizing the cost of healthy, culturally-acceptable food items, or working with local organizations to increase the availability and accessibility of such foods in low-income communities.</li>
+				<li>Incorporate estimated food basket cost as a critical component when determining transfer values for cash transfer programs such as the Conditional Cash Transfer program or the National Cash Transfer program.</li>
+				<li>Provide education and resources on healthy eating and budgeting to help Nigerian households make the most of their limited food budgets while eating nutritious food.</li>
+	      		</ul>
+	      		</div>
+			</div>
+			
+			<div class="subheader-text">Conclusion</div>
+        		<div class="project-details-content">
+         	 	<div class="body-text">
+			<p style="text-align: justify;">In conclusion, the low-cost and culturally acceptable food basket optimization plan for Nigerian households aims to help individuals and families on a budget access affordable, nutritious and culturally-appropriate food options based on past consumption preferences; thereby reducing their food insecurity burden. By implementing this plan, policymakers can help improve the nutritional status of lower-income Nigerian households, while also supporting local food consumption practices.</p>
+			
+			<h3>Limitations</h3>
+			<p>The project is subject to the following limitations:</p>
+			
+			<p><b>Data:</b></p>
+			<ul>
+				<li>Majority of  food items in the survey dataset have non-standard units of measurement e.g. cup sizes are measured using repurposed cans, not standard cup measurement. Additionally, there are possible measurement inaccuracies due to erroneous or missing data in survey responses. Thus, there might have been discrepancies during the food items nutrient conversion process.</li>
+				<li>Ideally, the CSI index should be computed based on frequency (e.g. count of days) of coping behaviors. However, the survey data records the responses to coping behaviors using Yes/No responses. This means our computed CSI values may be biased.</li>
+				<li>Ideally food baskets should be based on data from national food intake surveys but due to data unavailability, our project uses general household survey data instead.</li>
+				<li>The U.S. FDA daily reference values were used since the daily reference values by the Nigerian NAFDAC were unobtainable.</li>
+				<li>Only one week’s food expenditure is considered for our food basket design.</li>
+			</ul>
+			<p><b>Analytical:</b></p>
+			<ul>
+				<li>The prediction accuracy of the best performing model was lower than 60% indicating that there could be other features outside the dataset that are better predictors of food insecurity level which are currently not considered in our model.</li>
+				<li>Limited food nutrients are considered, hence, the optimized food baskets are not aimed at defining optimized diets.</li>
+				<li>Cost calculated is only the cost of food items; thus, extra costs incurred for food processing, preparation and storage are not considered.</li>
+			</ul>
+			<p><b>Economic:</b></p>
+			<ul>
+				<li>Food prices are subject to seasonal fluctuations and volatility because of the global market and local retailer selling policies.</li>
+			</ul>
+			
+			<h3>Future Work</h3>
+			<ul>
+				<li>Improve classification model by considering more features related to household financial status and food access e.g. nearness to markets or supermarkets, availability of food items in community.</li>
+				<li>Incorporate fuller nutrient constraints such as Recommended Nutrient Intake (RNI), Estimated Energy Requirements (EER) and utilize macronutrient distribution range to allow for flexibility of the optimization model.</li>
+				<li>Design food baskets for different household members and sectors (i.e. urban and rural) since household members might have different dietary requirements and different sectors have different food prices and food item availability.</li>
+				<li>Incorporate more food items into candidate food item list and create food groups with weights to ensure energy-giving and nutritious food items receive higher priority in food basket inclusion.</li>
+				<li>Switch from a deterministic to a stochastic food basket optimization model through simulation (simulating what the optimal food basket would look like with different weekly expenditure as an expense constraint). This could address the issue of households who spend less than the median weekly food expenditure of their household group not being able to afford the optimized food basket designed for their subgroup.</li>
+			</ul>
 			</div>
 			</div>
 				
