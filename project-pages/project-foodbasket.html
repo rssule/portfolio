@@ -75,7 +75,7 @@
           <div class="body-text">
 		  <p style="text-align: justify;">Nigeria is facing a severe food insecurity situation, with millions of people across the country struggling to access sufficient and nutritious food. The causes of food insecurity in Nigeria are complex and multi-faceted. Although the Nigerian government and international aid agencies have taken steps to address food insecurity, the scale of the problem remains significant and more needs to be done to alleviate food insecurity in Nigeria. To address the food insecurity issue for Nigerian households, we propose an additional tool for the government’s toolbox: an optimal food basket designed to be affordable and satisfy food consumption patterns of Nigerian households. Our project proposes the use of a random forest supervised learning model to predict the food insecurity levels of households (low, medium or high) based on a food insecurity indicator (Coping Strategies Index). Alternatively, if households' food insecurity status is known, we propose the use of a K-Means clustering unsupervised learning model to group Nigerian households into clusters based on their characteristics (including food coping behaviors). Our specific model suggests two clusters. The machine learning models are used to obtain median food expenditure for each household group, which is then used to design two food basket models: a low-cost and a low-cost & culturally-acceptable food basket. We found that the low-cost food basket model cost NGN 115 across household groups and comprised 4 food items. While the low-cost & culturally-acceptable food basket model comprised a wider variety of food items and was priced at the median food expenditure for each household group. As a means to fight food insecurity, we recommend the food basket model optimized for low-cost and culturally acceptability to the Nigerian government for implementation in hunger alleviation, cash transfer and health education programs. We acknowledge that our project is subject to several data, analytical and economic limitations, some of which we address as future work.</p>
 		</div>
-        </div>
+	</div>
 	
 	<div class="subheader-text">Problem Statement</div>
         <div class="project-details-content">
@@ -91,7 +91,6 @@
 		</div>
 		</div>
 	      
-	      <div id="project-details">
         <div class="subheader-text">Data</div>
         <div class="project-details-content">
           <div class="body-text">
@@ -101,25 +100,26 @@
 		  <p style="text-align: justify;">Our data cleaning goal was to ensure that our dataset was consistent, complete and ready for further analysis. First, we sought to identify errors, inconsistencies, and missing values in our datasets. This was important to improve the reliability of our results. Our data cleaning for household data was done in R. Our main focus was on re-coding responses into binary values, creating dummy variables for household dwelling types and economic shock features, aggregating household food expenditure for each household, and feature engineering the CSI variable (discussed in section 2.3.). With readily prepared data files, we merged multiple data sets into a single data file on household-level (i.e. a single record for each household) for analysis. Our merged household data file is called hh_data.csv, and comprises 4,170 households with its full variable list outlined in our data dictionary. For the food prices and nutritional components of each food item, we used the food price list from the community questionnaire as the base file. Next, we computed the food nutrient composition for each food item based on standardized units (kilogram for solid food items and liter for liquid food items). This new breakdown is used as our conversion table and is the foodprice_nutrition.csv data file.</p>
 		  <h3>Feature Engineering</h3>
 		  <p style="text-align: justify;">We had raw data (responses to questions in Fig.1) on household food coping behaviors but needed to transform this data into a meaningful feature that could be used as an indicator of food insecurity level for use in our analysis. Thus, we selected the Coping Strategies Index(CSI) as the household food insecurity indicator of interest. The CSI assesses the behavior of people when they cannot access enough food. CSI is calculated based on a series of questions aimed at providing different answers to the sole question: “What do you do when you don’t have adequate food and don’t have the money to buy any?”  We computed the CSI score for each household as a weighted sum of quantified responses (Yes/No) to coping behaviors. The weighted scores were divided into 3 groups for food insecurity level[4]: low (0-9) = 1, medium (10-18) = 2, and high (19-27) = 3. The resulting feature is a 1-3 label for each household indicating the food insecurity group.</p>
-		  <image class="project-header-image" src="../assets/images/image8.png">
-			<div class="gallery-image-container half-width">
+			<div class="gallery-image-container">
 			<img src="../assets/images/image8.png" class="gallery-image">
               		<span class="image-caption">Fig.1: Hunger coping behavior questions and severity weights</span>
-            		</div>
-			</div>  
+            		</div> 
 		  <h3>Exploratory Data Analysis</h3>
 		  <p style="text-align: justify;">From exploratory analysis, we see in Fig.2 presented below that approximately 68% of the 4,170 respondents live in urban areas. Fig.3 below shows that a high proportion of respondent households are potentially experiencing high food insecurity. For the relationship between food expenditure and food insecurity level, we assumed that households facing higher food insecurity would have lower food expenditure. However, visualizing the data shows that the average food expenditure from the dataset does not necessarily characterize coping behaviors as expected e.g. there is an outlier at the CSI score of 26. For the economic shocks, the graph shows that about 16% of respondent households were impacted by an increase in food prices. We noted this as a potential area for further analysis.  More EDA plots and charts are included in our EDA code file.</p>
-		<div class="gallery-image-container half-width">
-              	<img src="../assets/images/image14.png" class="gallery-image">
-              	<span class="image-caption">Fig.2: Area of respondents</span>
-           	 </div>
-		<div class="gallery-image-container half-width">
-              	<img src="../assets/images/image16.png" class="gallery-image">
-              	<span class="image-caption">Fig.3: Distribution of household’s CSI level</span>
-            	</div>
+		
+			<div class="project-gallery-content">
+				<div class="gallery-image-container half-width">
+				<img src="../assets/images/image14.png" class="gallery-image">
+				<span class="image-caption">Fig.2: Area of respondents</span>
+				 </div>
+				<div class="gallery-image-container half-width">
+				<img src="../assets/images/image16.png" class="gallery-image">
+				<span class="image-caption">Fig.3: Distribution of household’s CSI level</span>
+				</div>
+			</div>
 		</div>
-	
-		<div id="project-details">
+		</div>
+
         	<div class="subheader-text">Methods</div>
         	<div class="project-details-content">
          	 <div class="body-text">
@@ -168,7 +168,7 @@
 			    <p style="text-align: justify;">For ease of interpretability, we tried a decision tree classifier. Based on recursive binary splitting, we used the decision tree classifier to assign a household in a given region of the dataset to the most commonly occurring class of training observations in that region. Thus, predicting the household food insecurity group for each household. The optimal maximum tree depth after model tuning was 3 and the training accuracy was 57.1%</p>
 			    <li><strong>Random Forest</strong></li>
 			    <p style="text-align: justify;">We hoped to improve the predictive accuracy of the classification tree by aggregating many decision trees. We picked random forest over other aggregate tree methods like bagging, whose predictions are based on highly correlated trees, since random forest overcomes this issue by forcing each split to consider only a subset of features. We also checked for feature importance (shown in Fig.4) for better clarity on the model’s performance. The optimal maximum tree depth after model tuning was 8 and the training accuracy was 57.4%</p>
-				<div class="gallery-image-container half-width">
+				<div class="gallery-image-container">
               			<img src="../assets/images/image12.png" class="gallery-image">
               			<span class="image-caption">Fig.4: Feature importance graph</span>
             			</div>  
@@ -194,7 +194,8 @@
 			 <h3>Low-cost & Culturally Acceptable Food Basket</h3>
 			 <p style="text-align: justify;">The second optimization model is similar to the first model as it also optimizes for cost-effectiveness based on the same constraints but it is enhanced to consider the food shopping patterns of household groups based on previous average food consumption behavior for the group as an indicator for food consumption preference. Thus, its objective is to minimize the deviation of candidate food basket items from reported food intake for a specific household group. This ensures that the candidate food basket items are food items that the households are familiar with.</p>		 
         		</div>
-			 <div id="project-details">
+			 </div>
+			
         		<div class="subheader-text">Results</div>
         		<div class="project-details-content">
          	 	<div class="body-text">
@@ -226,60 +227,17 @@
 			<h3>Optimization Results</h3>
 			<p style="text-align: justify;"></p>
 			</div>
-			
-			<div id="project-details">
+			</div>
+
         		<div class="subheader-text">Results</div>
         		<div class="project-details-content">
          	 	<div class="body-text">
 			</div>
+			</div>
 				
 		</div>
-        </div>
-      </div>
+</div>
 
-      <!-- IMAGE GALLERY -->
-      <div id="project-gallery">
-        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-        <div class="subheader-text">Image Gallery</div>
-        <div class="project-gallery-content">
-            <!-- 
-              TODO
-
-              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
-
-              Full Width Image:
-
-                <div class="gallery-image-container">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              Half Width Image: 
-
-                <div class="gallery-image-container half-width">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
-                  - IMAGE_NAME: the name of the image file in assets/images
-                  - IMAGE_CAPTION: to the caption of the image
-            -->
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-        </div>
-      </div>
-    </div>
 
     <!-- FOOTER -->
     <div id="footer">
