@@ -100,13 +100,23 @@
 		  <h3>Data Cleaning</h3>
 		  <p style="text-align: justify;">Our data cleaning goal was to ensure that our dataset was consistent, complete and ready for further analysis. First, we sought to identify errors, inconsistencies, and missing values in our datasets. This was important to improve the reliability of our results. Our data cleaning for household data was done in R. Our main focus was on re-coding responses into binary values, creating dummy variables for household dwelling types and economic shock features, aggregating household food expenditure for each household, and feature engineering the CSI variable (discussed in section 2.3.). With readily prepared data files, we merged multiple data sets into a single data file on household-level (i.e. a single record for each household) for analysis. Our merged household data file is called hh_data.csv, and comprises 4,170 households with its full variable list outlined in our data dictionary. For the food prices and nutritional components of each food item, we used the food price list from the community questionnaire as the base file. Next, we computed the food nutrient composition for each food item based on standardized units (kilogram for solid food items and liter for liquid food items). This new breakdown is used as our conversion table and is the foodprice_nutrition.csv data file.</p>
 		  <h3>Feature Engineering</h3>
-		  <p style="text-align: justify;"></p>
-		  <image class="project-header-image" src="../assets/images/food-insecurity.jpg">
-			  
+		  <p style="text-align: justify;">We had raw data (responses to questions in Fig.1) on household food coping behaviors but needed to transform this data into a meaningful feature that could be used as an indicator of food insecurity level for use in our analysis. Thus, we selected the Coping Strategies Index(CSI) as the household food insecurity indicator of interest. The CSI assesses the behavior of people when they cannot access enough food. CSI is calculated based on a series of questions aimed at providing different answers to the sole question: “What do you do when you don’t have adequate food and don’t have the money to buy any?”  We computed the CSI score for each household as a weighted sum of quantified responses (Yes/No) to coping behaviors. The weighted scores were divided into 3 groups for food insecurity level[4]: low (0-9) = 1, medium (10-18) = 2, and high (19-27) = 3. The resulting feature is a 1-3 label for each household indicating the food insecurity group.</p>
+		  <image class="project-header-image" src="../assets/images/image8.png">
+			<div class="gallery-image-container half-width">
+			<img src="../assets/images/image8.png" class="gallery-image">
+              		<span class="image-caption">Fig.1: Hunger coping behavior questions and severity weights</span>
+            		</div>
+			</div>  
 		  <h3>Exploratory Data Analysis</h3>
-		  <p style="text-align: justify;"></p>
-		<image class="project-header-image" src="../assets/images/food-insecurity.jpg">
-		<image class="project-header-image" src="../assets/images/food-insecurity.jpg">
+		  <p style="text-align: justify;">From exploratory analysis, we see in Fig.2 presented below that approximately 68% of the 4,170 respondents live in urban areas. Fig.3 below shows that a high proportion of respondent households are potentially experiencing high food insecurity. For the relationship between food expenditure and food insecurity level, we assumed that households facing higher food insecurity would have lower food expenditure. However, visualizing the data shows that the average food expenditure from the dataset does not necessarily characterize coping behaviors as expected e.g. there is an outlier at the CSI score of 26. For the economic shocks, the graph shows that about 16% of respondent households were impacted by an increase in food prices. We noted this as a potential area for further analysis.  More EDA plots and charts are included in our EDA code file.</p>
+		<div class="gallery-image-container half-width">
+              	<img src="../assets/images/image14.png" class="gallery-image">
+              	<span class="image-caption">Fig.2: Area of respondents</span>
+           	 </div>
+		<div class="gallery-image-container half-width">
+              	<img src="../assets/images/image16.png" class="gallery-image">
+              	<span class="image-caption">Fig.3: Distribution of household’s CSI level</span>
+            	</div>
 		</div>
 	
 		<div id="project-details">
@@ -131,24 +141,98 @@
 			 <image class="project-header-image" src="../assets/images/image11.png">
 				 
 			 <h3>Machine Learning</h3>
-			 <p style="text-align: justify;"></p>
+			 <p style="text-align: justify;">Our machine learning goal was to develop food insecurity profiles for Nigerian households based on the following features:</p>
+			<ul>
+			  <li>household sector (i.e. urban vs rural)</li>
+			  <li>household dwelling type</li>
+			  <li>loan access</li>
+			  <li>total weekly food expenditure</li>
+			  <li>percentage of food consumed that was self-produced</li>
+			  <li>percentage of food consumed that was purchased</li>
+			  <li>percentage of food consumed that were gifts</li>
+			  <li>household economic shocks</li>
+			</ul>
 			 
 			 <h3>Supervised Learning</h3>
-			 <p style="text-align: justify;"></p>
+			 <p style="text-align: justify;">The supervised learning model was aimed at predicting the food insecurity levels of Nigerian households. Thus, the true labels of the dependent variable were based on the households’ food insecurity groups: 1 for Low, 2 for Medium, and 3 for High. A predictive supervised learning model would be applicable in an instance where some household characteristics, outlined as features above, are known but the household food insecurity level is unknown and unlikely to be computed due to a lack of household behavioral coping data i.e. data on households’ behaviors when they cannot access food.</p>
+			<p><b>Models</b></p>
+  			<p style="text-align: justify;">5-fold cross validation was used along with model hyperparameter tuning to fit and evaluate all supervised learning candidate models used in this project. Then the models were evaluated for best performance based on accuracy. We used accuracy to measure performance since we were interested in the percentage of correct predictions made by our models. The following were candidate models:</p>
+			  <ul>
+			    <li><strong>Linear Discriminant Analysis (LDA)</strong></li>
+			    <p style="text-align: justify;">Since logistic regression is difficult to interpret for more than 2 classes, the first model trained was the LDA. Since LDA assumes different means for each class and same covariance matrix for all classes, we assume that assumption approximately holds. In this case, we assumed that the joint distribution of the classes follows a shape that can be characterized by a few features. For LDA, we assumed that the decision rule depends on a feature only through a linear combination of all features. For the LDA model, the training accuracy was 57.4%</p>
+			    <li><strong>Quadratic Discriminant Analysis (QDA)</strong></li>
+			    <p style="text-align: justify;">QDA was tried as an alternative approach to LDA. For QDA, the assumption is that unlike LDA, each class has its own covariance matrix. Thus, we assumed the decision rule depends on a quadratic function. For the QDA model, the training accuracy was 56.9%</p>
+			    <li><strong>K-Nearest Neighbors (KNN)</strong></li>
+			    <p style="text-align: justify;">For KNN, based on the assumption that similar points can be found in close proximity to one another, we tried out between 1 to 20 neighbors during hyperparameter tuning. The optimal number of neighbors for the data and model parameters was 18. The training accuracy was 56.4%</p>
+			    <li><strong>Classification Tree</strong></li>
+			    <p style="text-align: justify;">For ease of interpretability, we tried a decision tree classifier. Based on recursive binary splitting, we used the decision tree classifier to assign a household in a given region of the dataset to the most commonly occurring class of training observations in that region. Thus, predicting the household food insecurity group for each household. The optimal maximum tree depth after model tuning was 3 and the training accuracy was 57.1%</p>
+			    <li><strong>Random Forest</strong></li>
+			    <p style="text-align: justify;">We hoped to improve the predictive accuracy of the classification tree by aggregating many decision trees. We picked random forest over other aggregate tree methods like bagging, whose predictions are based on highly correlated trees, since random forest overcomes this issue by forcing each split to consider only a subset of features. We also checked for feature importance (shown in Fig.4) for better clarity on the model’s performance. The optimal maximum tree depth after model tuning was 8 and the training accuracy was 57.4%</p>
+				<div class="gallery-image-container half-width">
+              			<img src="../assets/images/image12.png" class="gallery-image">
+              			<span class="image-caption">Fig.4: Feature importance graph</span>
+            			</div>  
+			  </ul>
+			 <p style="text-align: justify;">Though LDA and random forest had similar training accuracy, we selected <u>random forest</u> as our best performing model since it is a nonparametric and more robust model.</p>
 			 
 			 <h3>Unsupervised Learning</h3>
-			 <p style="text-align: justify;"></p>
+			 <p style="text-align: justify;">The unsupervised learning model was aimed at identifying homogeneous subgroups within Nigerian households at similar food insecurity severity levels. Thus, all features outlined above and CSI score were used. Since there was a need to analyze several variables, the clustering was done in a multi-step statistical process: Principal component analysis (PCA) for dimensionality reduction, followed by candidate model evaluation. The aim was to minimize the within-cluster variation, thus the performance metric used for model evaluation was the silhouette score (the higher the score, the better the clusters). The clusters were expected to satisfy two main properties: 1) cohesion: households in clusters should be similar to one another and 2) separation: households across clusters should be as different as possible. An unsupervised machine learning model would be applicable for grouping households in subgroups when all household characteristics, outlined as features, are known including the household food insecurity level.</p>
+			 <ul>
+			<li><strong>K-Means Clustering</strong></li> 
+			<p style="text-align: justify;">K-Means clustering was used to group similar households together into clusters. The model identified a number of clusters to create, and then iteratively assigned each household to the cluster that was most similar to it, based on the specified features. The model then adjusted the clusters to better reflect the data, and repeated this process until the clusters were stable. The best average silhouette score was 0.4 at 2 clusters.</p>
+			<li><strong>Gaussian Mixture Model (GMM)</strong></li>
+			<p style="text-align: justify;">We also used GMM, a probabilistic model, to cluster households into groups based on their likelihood of belonging to each cluster. The model assumed that each cluster was represented by a Gaussian distribution, and that the data points in the cluster were drawn from that distribution. The model then estimated the parameters of the Gaussian distributions for each cluster, and assigned each data point to the cluster with the highest likelihood. The best average silhouette score was 0.4 at 2 clusters.</p>
+			 </ul>
+			 <p style="text-align: justify;">K-Means and GMM had the same silhouette score and 2 clusters each, so we picked <u>K-Means</u> as our best performing model since it is a simpler and more intuitive model to understand and interpret compared to GMM</p>
 			 
 			 <h3>Optimization</h3>
-			 <p style="text-align: justify;"></p>
+			 <p style="text-align: justify;">After profiling Nigerian households into subgroups (i.e. using supervised and unsupervised learning models), the median weekly food expenditure for each subgroup and average food consumption for each food item were computed and used as parameters for the optimization models. The goal of the optimization model was to design an optimal food basket for household subgroups. Two optimization models were designed for each subgroup: a low-cost food basket model and a low-cost food basket model optimized for cultural acceptability.</p>
 			 
 			 <h3>Low-cost Food Basket</h3>
-			 <p style="text-align: justify;"></p>
+			 <p style="text-align: justify;">The low-cost food basket optimization model was used to identify the most cost-effective way to purchase a set of food items that meet a specified nutritional requirement. The model was set up to consider food item prices, nutritional content and availability of different food items, then using a linear programming model, find the combination of food items that provide nutrients to satisfy the daily reference values outlined by the U.S. FDA.</p>
 			 
 			 <h3>Low-cost & Culturally Acceptable Food Basket</h3>
-			 <p style="text-align: justify;"></p>
-			 
-        	</div>
+			 <p style="text-align: justify;">The second optimization model is similar to the first model as it also optimizes for cost-effectiveness based on the same constraints but it is enhanced to consider the food shopping patterns of household groups based on previous average food consumption behavior for the group as an indicator for food consumption preference. Thus, its objective is to minimize the deviation of candidate food basket items from reported food intake for a specific household group. This ensures that the candidate food basket items are food items that the households are familiar with.</p>		 
+        		</div>
+			 <div id="project-details">
+        		<div class="subheader-text">Results</div>
+        		<div class="project-details-content">
+         	 	<div class="body-text">
+			<h3>Machine Learning Results</h3>
+			<p><b>Supervised Learning Models</b></p>	
+			<p style="text-align: justify;">Overall, our supervised learning models gave prediction accuracy of less than 60% and the random forest test accuracy (best performing model) was also slightly under 60% at 57.8%. Suggesting that the model did not perform particularly well in terms of accurately predicting the classes of the households. This was not strange since the data is highly imbalanced and is a multi-class classification problem not a binary classification problem; thus, the accuracy might not be reflective of the true misclassifications for each class. This was confirmed by visualizing the classifications for each subgroup as shown in Fig.8; poor performance for group 2 and 3. Consequently, we used the hamming loss metric to determine the fraction of labels that were incorrectly predicted on average. The hamming loss value was 0.42 indicating that 42% of the observations were incorrectly classified. Concerns are addressed in <i>Limitations</i> section and proposed improvements are stated in <i>Future Work</i> section. In general, our results indicate that the model does not effectively capture the underlying patterns and relationships in the data, and that it may be overfitting or underfitting to the training data. Thus, the model needs to be improved or revised for better prediction performance.</p>
+			<p><b>Unsupervised Learning Models</b></p>
+			<p style="text-align: justify;">The final k-means clustering model was run with k = 2 and a silhouette score of 0.4, meaning that the model identified two clusters in the data and indicates that the data points in the two clusters are moderately well-separated from each other. This suggests that the model was able to effectively identify two distinct groups of households, with relatively little overlap between the two clusters. However, the relatively low silhouette score also indicates that there may be some data points that were not clearly assigned to one cluster or the other, or that the two clusters are not as distinct as they could be. In general, our results indicate that the model performed reasonably well in identifying distinct clusters in the data, but that there may be some room for improvement.</p>
+			<p style="text-align: justify;">The table below shows the median food expenditure for each household group identified by the machine learning models and used as parameters for the optimization models:</p>
+			<table>
+			  <tr>
+			    <th>Supervised: Random Forest</th>
+			    <th>Unsupervised: K-Means</th>
+			  </tr>
+			  <tr>
+			    <td>Low: NGN 5,245</td>
+			    <td>Cluster 1: NGN 4,270</td>
+			  </tr>
+			  <tr>
+			    <td>Medium: NGN 2,755</td>
+			    <td>Cluster 2: NGN 6,860</td>
+			  </tr>
+			  <tr>
+			    <td>Low: NGN 1,880</td>
+			    <td></td>
+			  </tr>
+			</table>
+			
+			<h3>Optimization Results</h3>
+			<p style="text-align: justify;"></p>
+			</div>
+			
+			<div id="project-details">
+        		<div class="subheader-text">Results</div>
+        		<div class="project-details-content">
+         	 	<div class="body-text">
+			</div>
+				
 		</div>
         </div>
       </div>
