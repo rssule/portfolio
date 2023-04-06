@@ -101,8 +101,12 @@
 		  <p style="text-align: justify;">Our data cleaning goal was to ensure that our dataset was consistent, complete and ready for further analysis. First, we sought to identify errors, inconsistencies, and missing values in our datasets. This was important to improve the reliability of our results. Our data cleaning for household data was done in R. Our main focus was on re-coding responses into binary values, creating dummy variables for household dwelling types and economic shock features, aggregating household food expenditure for each household, and feature engineering the CSI variable (discussed in section 2.3.). With readily prepared data files, we merged multiple data sets into a single data file on household-level (i.e. a single record for each household) for analysis. Our merged household data file is called hh_data.csv, and comprises 4,170 households with its full variable list outlined in our data dictionary. For the food prices and nutritional components of each food item, we used the food price list from the community questionnaire as the base file. Next, we computed the food nutrient composition for each food item based on standardized units (kilogram for solid food items and liter for liquid food items). This new breakdown is used as our conversion table and is the foodprice_nutrition.csv data file.</p>
 		  <h3>Feature Engineering</h3>
 		  <p style="text-align: justify;"></p>
+		  <image class="project-header-image" src="../assets/images/food-insecurity.jpg">
+			  
 		  <h3>Exploratory Data Analysis</h3>
 		  <p style="text-align: justify;"></p>
+		<image class="project-header-image" src="../assets/images/food-insecurity.jpg">
+		<image class="project-header-image" src="../assets/images/food-insecurity.jpg">
 		</div>
 	
 		<div id="project-details">
@@ -110,11 +114,22 @@
         	<div class="project-details-content">
          	 <div class="body-text">
 			 <h3>Assumptions</h3>
-			 <p style="text-align: justify;"></p>
+			 <p style="text-align: justify;">The project is subject to the following assumptions:</p>
+			<ul>
+			  <li>Reference family size for computations is four adult household members for each household</li>
+			  <li>Total food expenditure in the dataset for each household is their average weekly food expenditure</li>
+			  <li>Maximum food basket cost is based on median household expenditure for each group/cluster</li>
+			  <li>Consumption coping behavior questions used for computing CSI are relevant to the Nigerian cultural context</li>
+			  <li>Household members do not require specific dietary requirements</li>
+			  <li>Food prices are converted to per kilogram for solid items and per liter for liquid items</li>
+			  <li>Food prices are captured based on the average food prices for each item</li>
+			  <li>Food nutrients for each food item are converted based on the same unit as the food price (per kilogram for solid items and per liter for liquid items)</li>
+			</ul>
 			 
 			 <h3>Model Plan</h3>
-			 <p style="text-align: justify;"></p>
-			 
+			 <p style="text-align: justify;">For this project, our methodology was first to develop food insecurity profiles for Nigerian households using machine learning, then subsequently, create optimized food baskets for the household groups. The diagram below shows the implementation process flow:</p>
+			 <image class="project-header-image" src="../assets/images/image11.png">
+				 
 			 <h3>Machine Learning</h3>
 			 <p style="text-align: justify;"></p>
 			 
